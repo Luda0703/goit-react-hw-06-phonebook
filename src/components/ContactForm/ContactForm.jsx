@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Form, Label, Input, Button } from './ContactForm.styled';
 import PropTypes from "prop-types";
 
+
 export function ContactForm ({ onSubmit }) {
     const [name, setName] = useState('');
     const [number, setNumber] = useState('');
