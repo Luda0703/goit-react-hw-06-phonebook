@@ -22,14 +22,3 @@ export const ContactList = () => {
         </Ul>
     );
 }
-
-// ContactList.propTypes = {
-//     contacts: PropTypes.arrayOf(
-//         PropTypes.shape({
-//             name: PropTypes.string.isRequired,
-//             number: PropTypes.string.isRequired,
-//             id: PropTypes.string.isRequired
-//         })
-//     ).isRequired,
-//     onDeletContacts: PropTypes.func.isRequired,
-// }
