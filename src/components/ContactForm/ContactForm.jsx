@@ -22,9 +22,9 @@ export function ContactForm () {
         const name = e.target.elements.name.value;
         const number = e.target.elements.number.value;
 
-    if (contacts.some(({ name }) => name === name)) {
-      return alert(`${name} is already in contacts`);
-    }
+    // if (contacts.some(({ name }) => name === name)) {
+    //   return alert(`${name} is already in contacts`);
+    // }
 
     dispatch(addContact(name, number));
     form.reset();

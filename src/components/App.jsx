@@ -3,10 +3,10 @@
 import { ContactForm } from './ContactForm/ContactForm';
 import { Filter } from './Filter/Filter';
 import { ContactList } from './ContactList/ContactList';
-import { Container, H1, H2, P } from './Container.styled';
+import { Container, H1, H2 } from './Container.styled';
 // import {  deleteContact } from 'Redux/contactsSlice';
 // import { filters, setStatusFilter } from 'Redux/filtersSlice';
-import {  contactsReducer } from '../Redux/contactsSlice'
+// import {  contactsReducer } from '../Redux/contactsSlice'
 // import { contacts } from "Redux/contactsSlice";
 // import { filters } from "Redux/filtersSlice";
 
@@ -58,14 +58,7 @@ export function App() {
         <ContactForm />
         <H2>Contacts </H2>
         <Filter  />
-        {contactsReducer.length ? (
-        <ContactList 
-        // contacts={visibleContacts()} 
-        // onDeletContacts={deleteContact}
-        />
-        ) : (
-          <P>No contacts in phonebook</P>
-        )} 
+        <ContactList />
       </Container>
   );
 
