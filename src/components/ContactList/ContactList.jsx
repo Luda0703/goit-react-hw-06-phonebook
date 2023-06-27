@@ -1,11 +1,11 @@
 import { Ul, Li, Button, P } from './ContactList.styled'
 import { useDispatch, useSelector } from "react-redux";
 import {  deleteContact } from 'Redux/contactsSlice';
-import { getContacts } from 'Redux/selectors'; 
+import { getVisibleContacts } from 'Redux/selectors'; 
 
 export const ContactList = () => {
     const dispatch = useDispatch();
-    const contacts = useSelector(getContacts);
+    const contacts = useSelector(getVisibleContacts);
 
     return (
         <Ul>
